@@ -4,52 +4,53 @@
 
 #####Command#####
 
-`curl -XPOST 'localhost:6667/polygon/_search' -d '    
-{ "size":320000,    
-  "query": {    
-      "match_all": {}    
-   }    
-}' > search_result_src.txt`    
+    `curl -XPOST 'localhost:6667/polygon/_search' -d '    
+    { "size":320000,    
+      "query": {    
+          "match_all": {}    
+       }    
+    }' > search_result_src.txt`    
 
 #####Format#####
-`{    
-   "took": 5,    
-   "timed_out": false,    
-   "_shards": {    
-      "total": 5,    
-      "successful": 5,    
-      "failed": 0    
-   },    
-   "hits": {    
-      "total": 318599,    
-      "max_score": 1,    
-      "hits": [    
-         {    
-            "_index": "polygon",    
-            "_type": "suggestion",    
-            "_id": "472",    
-            "_score": 1,    
-            "_source": {    
-               "name": "Shukla Estate, Jogeshwari West, Mumbai, MMR, Maharashtra, India",    
-               "city_id": 1,    
-               "breadcrumb_score": 0.4,    
-               "ftype_score": 6,    
-               "score": {    
-                  "buy": 15,    
-                  "rent": 15,    
-                  "pg": 15    
-               },    
-               "super_type": "polygon",    
-               "city_uuid": "1ca99c33e3d8b987ccf1",    
-               "type": "neighbourhood",    
-               "id": 374681,    
-               "uuid": "1609a75bf36cad0cb84c"    
-            }    
-         },    
-         ......    
-        ]    
-    }    
-}`    
+
+	`{    
+	   "took": 5,    
+	   "timed_out": false,    
+	   "_shards": {    
+	      "total": 5,    
+	      "successful": 5,    
+	      "failed": 0    
+	   },    
+	   "hits": {    
+	      "total": 318599,    
+	      "max_score": 1,    
+	      "hits": [    
+	         {    
+	            "_index": "polygon",    
+	            "_type": "suggestion",    
+	            "_id": "472",    
+	            "_score": 1,    
+	            "_source": {    
+	               "name": "Shukla Estate, Jogeshwari West, Mumbai, MMR, Maharashtra, India",    
+	               "city_id": 1,    
+	               "breadcrumb_score": 0.4,    
+	               "ftype_score": 6,    
+	               "score": {    
+	                  "buy": 15,    
+	                  "rent": 15,    
+	                  "pg": 15    
+	               },    
+	               "super_type": "polygon",    
+	               "city_uuid": "1ca99c33e3d8b987ccf1",    
+	               "type": "neighbourhood",    
+	               "id": 374681,    
+	               "uuid": "1609a75bf36cad0cb84c"    
+	            }    
+	         },    
+	         ......    
+	        ]    
+	    }    
+	}`    
 
 
 ###Read the above JSON file in python and load complete JSON in dictionary###
