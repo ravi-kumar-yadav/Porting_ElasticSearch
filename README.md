@@ -67,9 +67,9 @@
 	            "city": [ "Noida", "All" ],
 	            "services" : 
 	                    [   
-	                        {"buy": 2},
-	                        {"rent":5},
-	                        {"pg":7}
+	                        {"buy": {"value" : 3} },
+	                        {"rent": {"value" : 7} },
+	                        {"pg": {"value" : 11} }
 	                    ]
 	            },
 	            "weight" : 35
@@ -80,9 +80,9 @@
 	            "city": [ "Noida", "All" ],
 	            "services" : 
 	                    [   
-	                        {"buy": 2 },
-	                        {"rent": 5 },
-	                        {"pg": 7 }
+	                        {"buy": {"value" : 2} },
+	                        {"rent": {"value" : 3} },
+	                        {"pg": {"value" : 5} }
 	                    ]
 	            },
 	            "weight" : 25
