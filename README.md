@@ -1,6 +1,6 @@
 # Porting_ElasticSearch
 
-###1. Download data from existing Hosted-Index into a local file###
+###Download data from existing Hosted-Index into a local file###
 
 #####Command#####
 
@@ -52,14 +52,12 @@
 }`
 
 
-###2. Read the above JSON file in python and load complete JSON in dictionary###
+###Read the above JSON file in python and load complete JSON in dictionary###
 
-###3. Write Python code to convert the document structure (obtained from old search index) to the target search-index###
+###Write Python code to convert the document structure (obtained from old search index) to the target search-index###
 
-------
-Format
-------
-PUT polygons/polygon/3
+#####Format#####
+`PUT polygons/polygon/3
 {
     "polygon_suggest": [
         {
@@ -79,10 +77,10 @@ PUT polygons/polygon/3
         ]
     }
 }
+`
+
+###After forming document (in new format), it should make a "curl" call for each document to the new hosted-index service###
 
 
-	3.1 After forming document (in new format), it should make a "curl" call for each document to the new hosted-index service
-
-
-3. See the result by firing search queries in new search-index 
+###See the result by firing search queries in new search-index###
 	
