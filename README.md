@@ -1,22 +1,18 @@
 # Porting_ElasticSearch
 
-# Porting_ElasticSearch
-
 1. Download data from existing Hosted-Index into a local file
--------
-Command
--------
-curl -XPOST 'localhost:6667/polygon/_search' -d '
+
+##Command##
+
+`curl -XPOST 'localhost:6667/polygon/_search' -d '
 { "size":320000,
   "query": {
       "match_all": {}
    }
-}' > search_result_src.txt
+}' > search_result_src.txt`
 
-------
-Format
-------
-{
+##Format##
+`{
    "took": 5,
    "timed_out": false,
    "_shards": {
@@ -53,7 +49,7 @@ Format
          ......
         ]
     }
-}
+}`
 
 
 2. Read the above JSON file in python and load complete JSON in dictionary
