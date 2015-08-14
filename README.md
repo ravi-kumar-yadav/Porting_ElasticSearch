@@ -11,7 +11,7 @@
        }    
     }' > search_result_src.txt  
 
-#####Format#####
+#####Source Format#####
 
 	{    
 	   "took": 5,    
@@ -57,7 +57,7 @@
 
 ###3. Write Python code to convert the document structure (obtained from old search index) to the target search-index###
 
-#####Format#####
+#####Target Format#####
 	PUT polygons/polygon/3
 	{
 	    "polygon_suggest": [
@@ -73,6 +73,19 @@
 	                    ]
 	            },
 	            "weight" : 35
+	        },
+	        {
+	            "input" : ["Bharat Nagar, Noida"],
+	            "contexts" : {
+	            "city": [ "Noida", "All" ],
+	            "services" : 
+	                    [   
+	                        {"buy": 2 },
+	                        {"rent": 5 },
+	                        {"pg": 7 }
+	                    ]
+	            },
+	            "weight" : 25
 	        },
 	        ...
 	        ]
