@@ -55,7 +55,7 @@
 
 ###2. Read the above JSON file in python and load complete JSON in dictionary###
 
-###Write Python code to convert the document structure (obtained from old search index) to the target search-index###
+###3. Write Python code to convert the document structure (obtained from old search index) to the target search-index###
 
 #####Format#####
 	PUT polygons/polygon/3
@@ -80,9 +80,9 @@
 	}
 	
 
-###After forming document (in new format), it should make a "curl" call for each document to the new hosted-index service###
+###4. After forming document (in new format), it should make a "curl" call for each document to the new hosted-index service###
 
 
-###See the result by firing search queries in new search-index###
+###5. See the result by firing search queries in new search-index###
 	
             
