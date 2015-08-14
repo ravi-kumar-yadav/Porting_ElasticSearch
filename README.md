@@ -13,7 +13,7 @@
 
 #####Format#####
 
-	`{    
+	{    
 	   "took": 5,    
 	   "timed_out": false,    
 	   "_shards": {    
@@ -50,7 +50,7 @@
 	         ......    
 	        ]    
 	    }    
-	}`    
+	}    
 
 
 ###Read the above JSON file in python and load complete JSON in dictionary###
@@ -58,27 +58,27 @@
 ###Write Python code to convert the document structure (obtained from old search index) to the target search-index###
 
 #####Format#####
-`PUT polygons/polygon/3
-{
-    "polygon_suggest": [
-        {
-            "input" : ["Bharat Nagar, Noida, UP"],
-            "contexts" : {
-            "city": [ "Noida", "All" ],
-            "services" : 
-                    [   
-                        {"buy": 2},
-                        {"rent":5},
-                        {"pg":7}
-                    ]
-            },
-            "weight" : 35
-        },
-        ...
-        ]
-    }
-}
-`
+	PUT polygons/polygon/3
+	{
+	    "polygon_suggest": [
+	        {
+	            "input" : ["Bharat Nagar, Noida, UP"],
+	            "contexts" : {
+	            "city": [ "Noida", "All" ],
+	            "services" : 
+	                    [   
+	                        {"buy": 2},
+	                        {"rent":5},
+	                        {"pg":7}
+	                    ]
+	            },
+	            "weight" : 35
+	        },
+	        ...
+	        ]
+	    }
+	}
+	
 
 ###After forming document (in new format), it should make a "curl" call for each document to the new hosted-index service###
 
