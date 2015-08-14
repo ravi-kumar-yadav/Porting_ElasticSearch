@@ -1,6 +1,6 @@
 # Porting_ElasticSearch
 
-1. ###Download data from existing Hosted-Index into a local file###
+###1. Download data from existing Hosted-Index into a local file###
 
 #####Command#####
 
@@ -53,7 +53,7 @@
 	}    
 
 
-###Read the above JSON file in python and load complete JSON in dictionary###
+###2. Read the above JSON file in python and load complete JSON in dictionary###
 
 ###Write Python code to convert the document structure (obtained from old search index) to the target search-index###
 
