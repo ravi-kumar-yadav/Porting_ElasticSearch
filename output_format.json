@@ -1,0 +1,56 @@
+
+
+
+PUT polygons/polygon/3
+{
+    "polygon_suggest": [
+        {
+            "input" : ["Bharat Nagar, Noida, UP"],
+            "contexts" : {
+            "city": [
+                        {"name":"Noida","boost":20},
+                        {"name":"All","boost":1}
+                    ],
+            "services" : 
+                    [   
+                        {"buy":{"boost":30,"value":2}},
+                        {"rent":{"boost":20,"value":5}},
+                        {"pg":{"boost":25,"value":7}}
+                    ]
+            },
+            "weight" : 35
+        },
+        {
+            "input" : ["Bharat Nagar, Noida"],
+            "contexts" : {
+            "city": [
+                        {"name":"Noida","boost":20},
+                        {"name":"All","boost":1}
+                    ],
+            "services" : 
+                    [   
+                        {"buy":{"boost":30,"value":2}},
+                        {"rent":{"boost":20,"value":5}},
+                        {"pg":{"boost":25,"value":7}}
+                    ]
+            },
+            "weight" : 25
+        },
+        {
+            "input" : ["Bharat Nagar, UP"],
+            "contexts" : {
+            "city": [
+                        {"name":"Noida","boost":20},
+                        {"name":"All","boost":1}
+                    ],
+            "services" : 
+                    [   
+                        {"buy":{"boost":30,"value":2}},
+                        {"rent":{"boost":20,"value":5}},
+                        {"pg":{"boost":25,"value":7}}
+                    ]
+            },
+            "weight" : 10
+        }
+    ]
+}

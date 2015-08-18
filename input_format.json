@@ -1,0 +1,48 @@
+{
+     "name": "Tanaji Nagar, N 2, Cidco", 
+     "city_id": 77, 
+     "breadcrumb_score": 0.4, 
+     "ftype_score": 6, 
+     "score": {
+          "buy": 15, 
+          "rent": 15, 
+          "pg": 15
+     }, 
+     "super_type": "polygon", 
+     "city_uuid": "2603bd53c6b10a06c3e5", 
+     "type": "neighbourhood", 
+     "id": 382242, 
+     "uuid": "80060750344f75b5bc1d"
+},
+{
+     "name": "Mirpur Lakha, Punjab, India", 
+     "city_id": 382, 
+     "breadcrumb_score": 0.5, 
+     "ftype_score": 3, 
+     "score": {
+          "buy": 15, 
+          "rent": 15, 
+          "pg": 15
+     }, 
+     "super_type": "polygon", 
+     "city_uuid": null, 
+     "type": "city", 
+     "id": 382259, 
+     "uuid": "0fc4162309c1e9936160"
+},
+{
+     "name": "Jonaka Puram, Thamarakulam", 
+     "city_id": 218, 
+     "breadcrumb_score": 0.4, 
+     "ftype_score": 5, 
+     "score": {
+          "buy": 15, 
+          "rent": 15, 
+          "pg": 15
+     }, 
+     "super_type": "polygon", 
+     "city_uuid": "03d8debb68208ad3a1ad", 
+     "type": "sublocality", 
+     "id": 382266, 
+     "uuid": "01d009d1e4e22aa4cc92"
+}
