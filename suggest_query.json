@@ -1,0 +1,15 @@
+POST polygons/_suggest
+{
+    "polygon" : {
+        "prefix":"ta",
+        "completion" : {
+            "field" : "polygon_suggest",
+            "contexts": {
+                 "city":[
+                        { "context":"All" },
+                        { "context": "Aurangabad", "boost":2 }
+                    ]
+            }
+        }
+    }
+}  
